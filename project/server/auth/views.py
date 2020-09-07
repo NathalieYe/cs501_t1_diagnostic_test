@@ -67,8 +67,6 @@ class UsersListAPI(MethodView):
         for u in users:
             resp.append({
                 'email': u.email,
-                'admin': u.admin,
-                'registered_on': u.registered_on
                 }
             )
 
