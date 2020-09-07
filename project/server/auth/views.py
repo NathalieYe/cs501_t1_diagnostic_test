@@ -64,9 +64,9 @@ class UsersListAPI(MethodView):
     def get(self):
         users = User.query.all()
         resp = []
-        for u in users:
+        for user in users:
             resp.append({
-                'email': u.email,
+                'email': user.email,
                 }
             )
 
